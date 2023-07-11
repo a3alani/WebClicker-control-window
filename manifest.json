@@ -1,11 +1,22 @@
 {
-    "name": "WebClicker Controls Extension",
-    "version": "1.0",
-    "description": "WebClicker Controls For Instructors",
-    "manifest_version": 3,
-    "author": "Ali Alani",
-    "action": {
-        "default_popup": "index.html",
-        "default_title": "WebClicker Controls"
+  "name": "WebClicker Controls",
+  "version": "1.0",
+  "description": "WebClicker Controls For Instructors",
+  "permissions": ["tabs"],
+  "host_permissions": ["https://webclicker.web.app/instructor/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://webclicker.web.app/instructor/*"],
+      "js": ["contentScript.js"]
     }
+  ],
+  "manifest_version": 3,
+  "author": "Ali Alani",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "WebClicker Controls"
+  }
 }
