@@ -1,0 +1,11 @@
+{
+    "name": "WebClicker Controls Extension",
+    "version": "1.0",
+    "description": "WebClicker Controls For Instructors",
+    "manifest_version": 3,
+    "author": "Ali Alani",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "WebClicker Controls"
+    }
+}
