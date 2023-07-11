@@ -1,1 +1,1 @@
-# WebClicker-control-window
+# WebClicker Control Extention
