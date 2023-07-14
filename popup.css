@@ -1,0 +1,68 @@
+.container {
+  width: 400px;
+  color: #314d3e;
+  padding: 10px; /* Add some padding for spacing */
+}
+
+.title {
+  font-size: 19px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.textbox {
+  width: 100%;
+  font-size: 12px;
+  margin: 0;
+  padding: 0px 2px;
+}
+
+.textbox:focus {
+  outline: 0;
+  border-color: #66afe9;
+}
+
+.container .controls {
+  margin: 5px 5px;
+  padding: 3px;
+}
+
+.container button.start-poll,
+.container button.display-results,
+.container button.end-session {
+  display: inline-block;
+  padding: 8px 18px; /* Increase the padding to make the buttons wider */
+  margin-right: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 8px; /* Curved edges */
+}
+
+.container button.start-poll {
+  background-color: #33bd38; /* Green */
+}
+
+.container button.start-poll:hover {
+  background-color: #3ab140; /* Darker Green */
+}
+
+.container button.display-results {
+  background-color: #2f39c5; /* Purple */
+}
+
+.container button.display-results:hover {
+  background-color: #3832aa; /* Darker Purple */
+}
+
+.container button.end-session {
+  background-color: #e34040; /* Red */
+}
+
+.container button.end-session:hover {
+  background-color: #d13232; /* Darker Red */
+}
